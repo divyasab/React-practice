@@ -1,33 +1,32 @@
-import Student from "./Student"
-import Principal from "./Principal"
-import Teacher from "./Teacher"
+import Student from "./Student";
+import Principal from "./Principal";
+import Teacher from "./Teacher";
 
-const App= function (){
+
+const App= function(){
   const student={
     name:"Divya",
-    age: "22",
-    class:"react"
+    age:"22",
+    class:"React"
   }
   const teacher={
     name:"Rupa",
     post:"Teacher",
-    salary:"30,000"
+    salary:"40,000"
   }
   return(
     <>
       <Student student={student}/>
-      ************************************
+      =============================================
       <Principal
-        name="jagdish"
-        post="principal"
-        salary="50,000"
+        name="Jagdish"
+        post="Principal"
+        salary="80,000"
       />
-      =========================================
-      < Teacher {...teacher}/>
-      __________________________________________________
+      *****************************************************
+      <Teacher {...teacher} />
+      ______________________________________
     </>
   )
-    
-  
 }
 export default App;
